@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+    <link rel="stylesheet" href="stylesform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <legend>
+            <h1>Cadastro</h1>
+        </legend>
+
+        <label id="name"> Nome: </label>
+        <input id="input-name" type="name" name="nome">
+
+        <label id="email"> Email: </label>
+        <input type="email" name="email">
+
+
+        <label id="age"> Idade: </label>
+        <input type="number" max=99 min=12 name="age">
+
+        <label id="date"> Data de Nascimento: </label>
+        <input type="date" name=data>
+
+        <label id="socialmidia"> Onde você possui conta: </label>
+        <div>
+            <input type="checkbox" name="checkfacebook"> Facebook
+            <input type="checkbox" name="checkinstagram"> Instagram
+            <input type="checkbox" name="checklinkedin"> Linkedin
+        </div>
+
+        <label id="sex"> Sexo:</label>
+
+        <input type="radio" name="sexo" value="fem"> Feminino
+        <input type="radio" name="sexo" value="masc"> Masculino
+
+
+        <label id="eyes"> Cor dos olhos: </label>
+        <input type="color" name="cor" value="#a45d00">
+
+            <div>
+            <label id="bio"> Biografia: </label>
+            <textarea name="biografia"> </textarea>
+
+            <label id="picture"> Foto de perfil: </label>
+            <input type="file" accept="image/*" name="foto">
+
+
+            <label id="tel"> Telefone: </label>
+            <input type="tel" name="telefone">
+
+            <label id="Linkedin"> Link do Linkedin: </label>
+            <input type="url" name="link">
+
+
+            <label id="password"> Senha: </label>
+
+            <input type="password" maxlength="8" minlength="6" name="senha">
+
+            <div>
+                <button id="reset-button" type="reset"> Limpar </button>
+                <button id="submit-button" type="submit"> Enviar </button>
+            </div>
+    </form>
+
+</body>
+
+</html>
